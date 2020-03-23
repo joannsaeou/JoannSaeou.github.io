@@ -1,0 +1,436 @@
+            .container {
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            
+            .jumbotron {
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            
+            .jumbotron {
+                background-color: transparent !important;
+            }
+            
+            #carousel {
+                float: center;
+            }
+            
+            article,
+            aside,
+            footer,
+            header,
+            nav,
+            section {
+                display: block;
+            }
+            
+            .container-fluid {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            /* mobile */
+            
+            @media (min-width: 576px) {
+                .container-fluid {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+            /* mobile */
+            
+            @media (min-width: 768px) {
+                .container-fluid {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+            
+            @media (min-width: 768px) {
+                .container-fluid {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+            
+            @media (min-width: 992px) {
+                .container-fluid {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+            
+            @media (min-width: 1200px) {
+                .container-fluid {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+            
+            .row {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+            
+            @media (min-width: 576px) {
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+            }
+            
+            @media (min-width: 768px) {
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+            }
+            
+            @media (min-width: 992px) {
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+            }
+            
+            @media (min-width: 1200px) {
+                .row,
+                .row-3,
+                .row-2 {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+            }
+            
+            .col-sm,
+            .col-md-4,
+            .card {
+                position: relative;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            
+            html {
+                font-family: sans-serif;
+                line-height: 1.15;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+            }
+            
+            body {
+                margin: 0;
+            }
+            
+            h1 {
+                font-size: 2em;
+                margin: 0.67em 0;
+            }
+            
+            a {
+                background-color: transparent;
+                -webkit-text-decoration-skip: objects;
+            }
+            
+            a:active,
+            a:hover {
+                outline-width: 0;
+            }
+            
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                font-family: sans-serif;
+                font-size: 100%;
+                line-height: 1.15;
+                margin: 0;
+            }
+            
+            button,
+            input {
+                overflow: visible;
+            }
+            
+            p,
+            h2,
+            h3 {
+                orphans: 3;
+                widows: 3;
+            }
+            
+            h2,
+            h3 {
+                page-break-after: avoid;
+            }
+            
+            html {
+                -ms-overflow-style: scrollbar;
+                -webkit-tap-highlight-color: transparent;
+            }
+            
+            body {
+                font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-size: 1rem;
+                font-weight: normal;
+                line-height: 1.5;
+                color: #292b2c;
+                background-color: #fff;
+            }
+            /* carousel */
+            
+            .carousel {
+                position: relative;
+            }
+            
+            .carousel-inner {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+            
+            .carousel-item {
+                position: relative;
+                display: none;
+                width: 100%;
+            }
+            
+            @media (-webkit-transform-3d) {
+                .carousel-item {
+                    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+                    transition: -webkit-transform 0.6s ease-in-out;
+                    -o-transition: -o-transform 0.6s ease-in-out;
+                    transition: transform 0.6s ease-in-out;
+                    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    -webkit-perspective: 1000px;
+                    perspective: 1000px;
+                }
+            }
+            
+            @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
+                .carousel-item {
+                    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+                    transition: -webkit-transform 0.6s ease-in-out;
+                    -o-transition: -o-transform 0.6s ease-in-out;
+                    transition: transform 0.6s ease-in-out;
+                    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    -webkit-perspective: 1000px;
+                    perspective: 1000px;
+                }
+            }
+            
+            .carousel-item.active,
+            .carousel-item-next,
+            .carousel-item-prev {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+            }
+            
+            .carousel-item-next,
+            .carousel-item-prev {
+                position: absolute;
+                top: 0;
+            }
+            
+            @media (-webkit-transform-3d) {
+                .carousel-item-next.carousel-item-left,
+                .carousel-item-prev.carousel-item-right {
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+                .carousel-item-next,
+                .active.carousel-item-right {
+                    -webkit-transform: translate3d(100%, 0, 0);
+                    transform: translate3d(100%, 0, 0);
+                }
+                .carousel-item-prev,
+                .active.carousel-item-left {
+                    -webkit-transform: translate3d(-100%, 0, 0);
+                    transform: translate3d(-100%, 0, 0);
+                }
+            }
+            
+            @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
+                .carousel-item-next.carousel-item-left,
+                .carousel-item-prev.carousel-item-right {
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+                .carousel-item-next,
+                .active.carousel-item-right {
+                    -webkit-transform: translate3d(100%, 0, 0);
+                    transform: translate3d(100%, 0, 0);
+                }
+                .carousel-item-prev,
+                .active.carousel-item-left {
+                    -webkit-transform: translate3d(-100%, 0, 0);
+                    transform: translate3d(-100%, 0, 0);
+                }
+            }
+            
+            .carousel-control-prev,
+            .carousel-control-next {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                width: 15%;
+                color: #fff;
+                text-align: center;
+                opacity: 0.5;
+            }
+            
+            .carousel-control-prev:focus,
+            .carousel-control-prev:hover,
+            .carousel-control-next:focus,
+            .carousel-control-next:hover {
+                color: #fff;
+                text-decoration: none;
+                outline: 0;
+                opacity: .9;
+            }
+            
+            .carousel-control-prev {
+                left: 0;
+            }
+            
+            .carousel-control-next {
+                right: 0;
+            }
+            
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: transparent no-repeat center center;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+            }
+            
+            .carousel-control-prev-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+            }
+            
+            .carousel-control-next-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+            }
+            
+            .carousel-indicators {
+                position: absolute;
+                right: 0;
+                bottom: 10px;
+                left: 0;
+                z-index: 15;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                padding-left: 0;
+                margin-right: 15%;
+                margin-left: 15%;
+                list-style: none;
+            }
+            
+            .carousel-indicators li {
+                position: relative;
+                -webkit-box-flex: 1;
+                -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
+                max-width: 30px;
+                height: 3px;
+                margin-right: 3px;
+                margin-left: 3px;
+                text-indent: -999px;
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            
+            .carousel-indicators li::before {
+                position: absolute;
+                top: -10px;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 10px;
+                content: "";
+            }
+            
+            .carousel-indicators li::after {
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 10px;
+                content: "";
+            }
+            
+            .carousel-indicators .active {
+                background-color: #fff;
+            }
+            
+            .carousel-caption {
+                position: absolute;
+                right: 15%;
+                bottom: 20px;
+                left: 15%;
+                z-index: 10;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                color: #fff;
+                text-align: center;
+            }
+            
+            audio,
+            video {
+                display: inline-block;
+            }
+            
+            img {
+                vertical-align: middle;
+            }
+            
+            .jumbotron {
+                background-color: black;
+            }
