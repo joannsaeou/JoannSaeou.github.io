@@ -3,7 +3,7 @@
 joannsaeou.github.io
 
 
-# web-330
+# web-335 and web-420
  Introduction to Javascript
 
 # contributors 
