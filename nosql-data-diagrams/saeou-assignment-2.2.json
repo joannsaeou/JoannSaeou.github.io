@@ -1,0 +1,36 @@
+{
+
+    "_customerID": "A0A0",
+    "firstName": "Ash",
+    "lastName": "Ketchum",
+    "birthdate": "2000-01-15T00:00:00Z",
+    "username": "AshfromPalletTown",
+
+    "invoices": [{
+
+        "_id": "A1A1",
+        "dateCreated": "2020-05-03T00:00:00Z",
+        "dateShipped": "2020-05-08T00:00:00Z",
+        "subtotal": "25.99",
+        "tax": "1.59",
+        "total": "27.58",
+
+        "lineItem": [{
+
+                "_id": "A1A0",
+                "name": "Pokeball",
+                "price": "1.99",
+                "quantity": "75"
+
+            },
+            {
+                "_id": "A1A2",
+                "name": "Moo-Moo Milk",
+                "price": "5.99",
+                "quantity": "50"
+
+            }
+        ]
+    }]
+
+}

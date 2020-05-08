@@ -4,7 +4,7 @@
 ; Author: Professor Krasso
 ; Date: 03 May 2020
 ; Modified By: Joann Saeou
-; Description: API gateway part I
+; Description: API gateway part I part II
 ;===========================================
 */
 
@@ -16,6 +16,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index')
+var apiCatelog = require('./routes/api-catelog');
 var app = express();
 
 var mongoose = require('mongoose');
@@ -36,6 +37,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/api', apiCatelog);
 
 
 // catch 404 and forward to error handler
