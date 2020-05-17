@@ -1,0 +1,37 @@
+{
+    "user": [{
+
+            "user_id": "001",
+            "user_name": "Ash Ketchum",
+            "link_user_role": {
+                "user_role_id": "001",
+                "role": {
+                    "role_id": "00A",
+                    "role_title": "trainer",
+                    "link_role_permission": {
+                        "role_permission_id": "01"
+                    }
+                }
+
+            }
+        },
+        {
+            "user_id": "002",
+            "user_name": "Gary Oak",
+            "link_user_role": [{
+                    "user_role_id": "002",
+                    "role": {
+                        "role_id": "00B",
+                        "role_title": "Researcher",
+                        "link_role_permission": {
+                            "role_permission_id": "02"
+                        }
+                    }
+                }
+
+
+
+            ]
+        }
+    ]
+}

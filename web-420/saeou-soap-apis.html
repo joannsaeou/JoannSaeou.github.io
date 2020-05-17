@@ -1,10 +1,10 @@
 <!-- 
     ============================================
-    ; Title: Assignment 2.2
+    ; Title: Assignment 3.3
     ; Author: Professor Krasso
     ; Date: 09 May 2020
     ; Modified By: Joann Saeou
-    ; Description:presentation  with RESTFUL API
+    ; Description:presentation  with SOAP RESTFUL API
     ;===========================================
 */  
 -->
@@ -269,74 +269,75 @@
             <!-- slide 1-->
             <div class="mySlides">
 
-                <q>What is the RESTful APIs  really are? 
+                <q>What is SOAP? 
                 </q>
-                <p> in RESTFUL term, the API stands for application program interface.
+                <p> SOAP is an application communication protocol,a platform independent, is based on XML, and also a format for sending and inviting messages.
                 </p>
+                <p> More importantly, SOAP stands for "Simple Object Access Protocol".</p>
             </div>
 
             <!-- slide 2-->
             <div class="mySlides">
 
-                <q> How RESTFUL API are used? </q>
-                <p>A RESTFUL API is a design that is used to take advantage of existing protocols and HTTP. They are used to allows two software program to communicate with each other.
+                <q>Envelope. What are they to SOAP?  </q>
+                <p>An envelope is an element that identifies the XML document as a SOAP message. An envelope is the root element of a SOAP message
                 </p>
             </div>
 
             <!-- slide 3-->
             <div class="mySlides">
-                <q>What are the advantages of REST API? </q>
+                <q>Header - What is Header?  </q>
                 <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6>- Simple to build and adapt</h6>
-                    <h6>- low uses of resources, meaning the data is not tied to resources or methods. </h6>
-                    <h6>- process instances are created explicitly</h6>
-                    <h6>- It provide a great deal of flexibility </h6>
+                    <h6>- The header is a general tool for adding features to a message in a localized manner without agreement between the communications parties that were involve.</h6>
+                    <h6>- The header element must be the first immediate child element of ENVELOPE. </h6>
+
+                    <h6>- Header defines how a recipient should process the SOAP message. </h6>
                 </div>
 
             </div>
 
             <!-- slide 4-->
             <div class="mySlides">
-                <q> What are the disadvantages of REST API?</q>
+                <q> Faults and Fault Code</q>
                 <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6>- REST API can lose the ability to maintain state in REST</h6>
-                    <h6>- new developers may need to go through a steep of learning curve to notice the disadvantages.</h6>
-                    <h6>- Cannot retrieve all carrier/class values available for a profile
+                    <h6>- SOAP fault is used to carry any error or status information within a message in SOAP.</h6>
+                    <h6>- Fault must appear as a body entry but it cannot appear more than once within the body element. So meaning, it must be used ONCE.
                     </h6>
-                    <h6>-Not possible to stage through thousands of products directly </h6>
+                    <h6>- FAULT CODE - it is used by software to include a scientific tool for identifying the fault.
+                    </h6>
+                    <h6>-They must present in a SOAP fault element. and the value must be qualified. </h6>
                 </div>
             </div>
 
 
             <!-- slide 5-->
             <div class="mySlides">
-                <q>What is the differences between URI and URL   </q>
-                <p>URI stands for uniform resource identifier and URL stands for uniform resource locator</p>
-                <p>The main difference is that the URI can be a name, locator, or both for an online resource, where the URL is just the locator. </p>
+                <q>End-to-end data flow of a SOAP API  </q>
+                <p>The data-flow of a SOAP API is that it used the standard HTTP request/response model so that the server uses a "listener" to process the requests.
+                </p>
+                <p></p>
             </div>
 
 
             <!-- slide 6-->
-            <!-- to be continued-->
+
 
             <div class="mySlides">
-                <q>What are Web Communications? </q>
-                <p> A Web Communication in REST API means that both the HTTP requests used GET/POST/PUT/DELETE as their communications to the client and the web server. You can trigger an HTTP post request where client will enter a message on the box and
-                    hit submit. And then, you will receive an HTTP post if the user clicks on the Post button.</p>
+                <q>What are Soap Bindings? </q>
+                <p> The SOAP conditions defines the formation of the messages, but not how they are swapped.
+                </p>
             </div>
 
-            <!-- slide 7-->
 
-            <div class="mySlides">
-                <q> API (Application Programming Interface)</q>
-                <p> When it comes to designing, REST has become the go-to method for designing powerful API that runs over HTTP. </p>
-            </div>
+
 
             <!-- slide 8-->
 
             <div class="mySlides">
-                <q>Learning API   </q>
-                <p> For API developers, learning the degree of Restful API design is evaluative if they want high adoption rate for their API. </p>
+                <q>SOAP - Syntax Rules    </q>
+                <p> MUST be encoded using XML. </p>
+                <p>- MUST use the SOAP Envelope Namespace</p>
+                <p>- the messages must not contain XML processing Instructions </p>
             </div>
 
         </div>
@@ -346,33 +347,21 @@
         <!-- slide 9-->
 
         <div class="mySlides">
-            <q>Four key  strategy requirement to API    </q>
+            <q>SOAP - building blocks    </q>
 
-            <p> 1. Alignment and Usefulness </p>
-            <p> 2. Engagement and Usability </p>
-            <p>3. Scalability and Evolvability </p>
-            <p>4. Manageability and Sustainability </p>
+            <p> A header element that contains header information</p>
+            <p> A body element that contains call and response information </p>
 
-
+            <p> A Fault element containing errors and status information </p>
 
 
-        </div>
+
 
         </div>
-
-        <!-- slide 10 -->
-
-        <div class="mySlides">
-            <q>Goals of API design  </q>
-            <p>Enabling Self-service for app developers and app users alike. </p>
-            <p>Reducing barriers to accessing valuable enterprise resources. </p>
-            <p>Encouraging collaboration between and among internal and external resources.</p>
-            <p>Above all, API design must be focused on maximizing the business value of the interface. </p>
 
         </div>
 
 
-        </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -389,19 +378,22 @@
             <span class="dot" onclick="currentSlide(6)"></span>
             <span class="dot" onclick="currentSlide(7)"></span>
             <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
+
+
         </div>
+
         <hr>
         <br>
-
 
         <div class="card">
             <div class="card-body">
                 <video controls autoplay reload="autoplay" style="width:600px;">
-            <source src="../restful-api-presentations/saeou-presentation2.mp4" type="video/mp4"> 
+            <source src="../restful-api-presentations/saeou-soap.mp4" type="video/mp4"> 
             </video>
             </div>
+
+
+
 
 
 

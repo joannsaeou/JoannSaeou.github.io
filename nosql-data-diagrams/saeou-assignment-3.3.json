@@ -1,0 +1,21 @@
+{
+    "publisher": {
+        "publisher_name": "Scholastic (September 1, 1999)",
+        "publisher_code": "ABCD",
+        "publisher_address": "New, NE",
+        "book": [{
+                "book_isbn": "0439135508",
+                "book_name": "Attack of the Prehistoric Pokemon",
+                "book_price": 12.58,
+                "author": {
+                    "author_first_name": "Tracey",
+                    "author_last_name": "West",
+                    "author_phone": "001-001-0001",
+                    "author_email": "tracywest@edu.com"
+                }
+            }
+
+        ]
+    }
+
+}
