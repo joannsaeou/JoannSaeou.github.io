@@ -21,7 +21,9 @@ var app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb+srv://jsaeou:s8Ppu7ODacksF2Be@buwebdev-cluster-1-2eedp.mongodb.net/test?retryWrites=true&w=majority', {
+
+//mongodb connection string  (change password)
+mongoose.connect('mongodb+srv://jsaeou:2ZnX6yhufY8NERUC@buwebdev-cluster-1-2eedp.mongodb.net/test?retryWrites=true&w=majority', {
         promiseLibrary: require('bluebird')
     }).then(() => console.log('connection successful'))
     .catch((err) => console.log(err))
