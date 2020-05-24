@@ -18,13 +18,14 @@ let userSchema = new mongoose.Schema({
     email: String
 });
 
-//callback add function
-module.exports = mongoose.model('User', userSchema)
 
+module.exports = mongoose.model('User', userSchema);
+
+//callback add function
 module.exports.add = (user, callback) => {
     user.save(callback);
 
-};
+}
 
 //callback get by ID function
 module.exports.getById = (id, callback) => {
@@ -32,4 +33,4 @@ module.exports.getById = (id, callback) => {
     User.findById(query, callback);
 
 
-};
+}
