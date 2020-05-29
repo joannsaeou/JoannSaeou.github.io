@@ -12,8 +12,8 @@ var config = {};
 
 config.web = {};
 
-config.web.port = process.env.PORT || '3000';
-config.web.secret = 'secretToken'
+config.web.port = process.env.PORT || '3000'; //web port # to localhost:3000
+config.web.secret = 'secretToken' //password
 
 
 module.exports = config;

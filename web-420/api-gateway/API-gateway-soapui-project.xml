@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="35a85dc5-5944-497f-a050-0666ed0a8718" activeEnvironment="Default" name="API gateway" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="0e111c41-2e16-416b-8cd4-bd8ed4a9d33a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:3000</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="" id="a93419e0-eed9-4015-9018-57f0b72b78e7">
+      <con:settings/>
+      <con:parameters/>
+      <con:resource name="register" path="/auth/api/register" id="f4ab3c2f-0cf7-461c-a002-6ef8736a9b38">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="Method 1" id="c52be11f-79c5-4ed5-8a75-2ec5584f4c73" method="GET">
+          <con:settings/>
+          <con:parameters/>
+          <con:representation type="REQUEST">
+            <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+            <con:params/>
+          </con:representation>
+          <con:representation type="FAULT">
+            <con:mediaType>text/html; charset=utf-8</con:mediaType>
+            <con:status>404 500</con:status>
+            <con:params/>
+            <con:element>html</con:element>
+          </con:representation>
+          <con:representation type="RESPONSE">
+            <con:mediaType xsi:nil="true"/>
+            <con:status>0</con:status>
+            <con:params/>
+            <con:element>data</con:element>
+          </con:representation>
+          <con:request name="Request 1" id="91a5031d-abd8-4f74-97c4-6f8c3b86b5ff" mediaType="application/x-www-form-urlencoded" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:3000</con:endpoint>
+            <con:request>grant_type=password&amp;username=api-gateway&amp;password=6x155hVexjedDLdE&amp;email=jsaeou@my365.bellevue.edu</con:request>
+            <con:originalUri>http://localhost/auth/api/register</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:request>
+        </con:method>
+      </con:resource>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="3e2388eb-a3e9-4222-8db8-65394be02a2d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:3000</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/api/auth/register" id="e1d45b2e-cde5-494c-b9b2-8f5f1b3a07c2">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="1" id="23867b2f-c7cc-4033-bc36-b8351a19045f" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="afdf3578-7885-4d83-bfc9-2bea19e69c52" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:3000</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="7c0c3764-dc18-4cd6-9572-700f630b58fd" name="TestSuite 1">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="610f1f5c-f92f-46fc-ac69-2c8fdac8c1ba" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="1 - Request 1" id="e565bb58-020b-4309-97fc-81894175ff0a">
+        <con:settings/>
+        <con:config service="http://localhost:3000" resourcePath="/api/auth/register" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="1 - Request 1" id="afdf3578-7885-4d83-bfc9-2bea19e69c52" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:3000</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://localhost/</con:originalUri>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:properties/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

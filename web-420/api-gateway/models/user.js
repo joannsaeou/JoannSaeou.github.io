@@ -30,7 +30,7 @@ module.exports.add = (user, callback) => {
 //callback get by ID function
 module.exports.getById = (id, callback) => {
     var query = { _id: id };
-    User.findById(query, callback);
+    user.findById(query, callback);
 
 
 }

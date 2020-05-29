@@ -26,7 +26,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
 //mongodb connection string  to (change password)
-mongoose.connect('mongodb+srv://api-gateway:6x155hVexjedDLdE@buwebdev-cluster-1-2eedp.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://admin:abcabc123123@buwebdev-cluster-1-2eedp.mongodb.net/test?retryWrites=true&w=majority', {
         promiseLibrary: require('bluebird'),
         useNewUrlParser: true, //  <--- deprecationWarning to be removed  for future version
         useUnifiedTopology: true
