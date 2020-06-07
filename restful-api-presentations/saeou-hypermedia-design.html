@@ -271,88 +271,93 @@
             <!-- slide 1-->
             <div class="mySlides">
 
-                <q>What is the features of RESTFUL services?</q>
-                <p> Representations, Messages, URIs, Uniform interface, Stateless, Links between resources, Caching
+                <q>Business use case </q>
+                <p> A business use case describes "a sequence of actions performed in a business that produces a result of observable value to an individual actor of the business". Hence, from an individual actor’s perspective, a business use case defines
+                    the complete workflow that produces the desired results.
+
                 </p>
             </div>
 
             <!-- slide 2-->
             <div class="mySlides">
 
-                <q> How is the relationship between HTTP messages and REST related? </q>
-                <p> They are used to communicate with each other from client side to server side</p>
+                <q>  Return of Investment(ROI) </q>
+                <p> ROI stands for "Return of investment" and it is the ratio between the net profit and cost of investman resulting from an investment of some resources. If you want your customer to use API on your open platform, then your API must be pure
+                    and simple. You can build up your API to the place it needs to be once you start off at a good rate. </p>
             </div>
 
             <!-- slide 3-->
             <div class="mySlides">
-                <q>what are the HTTB verbs?</q>
-                <p> POST, GET, PUT, PATCH, and DELETE</p>
+                <q>7-step design procedure </q>
+                <p></p>
             </div>
 
             <!-- slide 4-->
             <div class="mySlides">
-                <q> Role of REST in Modern Web Application</q>
-                <p>REST API's play integral role linking backend data with frontend web applications.</p>
+                <q> Step 1 - List all the parts </q>
+                <p>The first step is to list all the pieces of data a client application might want to get out of the service or put into it. For example: id, title, dateDue, complete.</p>
             </div>
 
             <!-- slide 5-->
             <div class="mySlides">
-                <q>Stateless Client/Server Protocol </q>
-                <p>Being stateless makes REST APIs less complex – by removing all server-side state synchronization logic.</p>
+                <q>Step 2 - Draw State Diagram</q>
+                <p>You will need to draw out the state diagrams after you reconciled names.</p>
+
+                <p> For example : Imagine a box of diagram on your id, title, datedue, and complete. Then draw some arrow pointing to the other box diagram.
+
+                </p>
             </div>
 
             <!-- slide 6-->
 
             <div class="mySlides">
-                <q>what does REST stands for?</q>
-                <p> Representational State Transfer a.k.a REST</p>
+                <q>Step 3 - Reconcile Magic Strings</q>
+                <p> Go check on these profile on your API for names you can reuse. </p>
+                <p>
+                    Reusing existing names when possible will lower the chance that a person will misunderstand one of your magic string. </p>
+                </p>
             </div>
 
             <!-- slide 7-->
 
             <div class="mySlides">
-                <q>What is a client server? </q>
-                <p> The client-server design enables a standard interface and separates clients from the servers. </p>
+                <q>Step 4 - Pick a Media Type </q>
+                <p> This is where it is time to choose a hypermedia format that can represent the state diagrams. You can design a new domain-specific media type to represent the diagram but it is not necessary. Keep in mind that JSON is not a hypermedia
+                    format but, XML is a hypermedia format because you can use Xlink and XForms to give HTML capabiltiies to any XML doucment. </p>
             </div>
 
             <!-- slide 8-->
 
             <div class="mySlides">
-                <q>What are the methods of a REST API </q>
-                <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6>C - Create - POST</h6>
-                    <h6>R - Read &nbsp;&nbsp;- GET</h6>
-                    <h6>U - Update - PUT</h6>
-                    <h6>D - Delete - DELETE</h6>
-                </div>
-
+                <q>step 5 - Create a profile  </q>
+                <p> your profile can be an ALPS document, a JSON-LD context, or a web page that uses XMDP microformat. You can reuse link relation and descriptors from alps to the original profile.
+                </p>
             </div>
 
-
-
-            <!-- slide 9-->
-
-            <div class="mySlides">
-                <q>Making Request - RESTFUL    </q>
-
-                <p> REST requires that a client make a request to the server in order to recoup or make changes to the data on the server. A request normally contains of:</p>
-
-                <p> An HTTP verb, which defines what kind of operation to perform. </p>
-                <p> Header, which lets the client to pass along information about the request.</p>
-                <p> A path to a resource. An optional message body including data. </p>
+        </div>
 
 
 
+        <!-- slide 9-->
 
-            </div>
+        <div class="mySlides">
+            <q>Step 6 -  Write some code (implementation)  </q>
+
+            <p> Turn over your design documents (state charts and semantic profile) to developers of both the server and client apps in order to start a specific implementation</p>
+
+
+
+
+
+        </div>
 
         </div>
 
         <!-- slide 10 -->
 
         <div class="mySlides">
-            <q>PATHS in RESTFUL  </q>
-            <p> Paths should be outlined to help the client know what is going on</p>
+            <q>Step 7 - publish your API   </q>
+            <p> Once everything is running properly including the codes, you are now finish. Your API documentation now consists of your API's billboard URL and a value for the Content-Type header. </p>
             <p> Requests must have a path to a resource that the operation should be carry out on</p>
             <p> the first part of the path should be the multiple form of the resource.</p>
 

@@ -19,18 +19,32 @@ let userSchema = new mongoose.Schema({
 });
 
 
-module.exports = mongoose.model('User', userSchema);
+let User = mongoose.model("User", userSchema);
 
-//callback add function
-module.exports.add = (user, callback) => {
+
+//to create a function to add users 
+User.add = function (user, callback) {
     user.save(callback);
+  };
+  
 
-}
+  // Created a callback to  get by ID function
+  User.getById = function (id, callback) {
+    let query = {
+      _id: id
+    };
+    this.findById(query, callback);
+  };
+  
 
-//callback get by ID function
-module.exports.getById = (id, callback) => {
-    var query = { _id: id };
-    user.findById(query, callback);
+  //  query for finding individual users by email
+  User.getOne = function (e, callback) {
+    let query = {email: e};
+    this.findOne(query, callback);
+  };
 
 
-}
+
+  module.exports =  User;
+
+console.log(module.exports);
