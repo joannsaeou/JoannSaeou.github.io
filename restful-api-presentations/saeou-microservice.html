@@ -1,10 +1,10 @@
 <!-- 
     ============================================
-    ; Title: Assignment 3.3
+    ; Title: Assignment 1.4
     ; Author: Professor Krasso
-    ; Date: 09 May 2020
+    ; Date: 03 May 2020
     ; Modified By: Joann Saeou
-    ; Description:presentation  with SOAP RESTFUL API
+    ; Description: API gateway part I week-1 RESTFUL 
     ;===========================================
 */  
 -->
@@ -90,15 +90,14 @@
     <nav class="nav nav-pills flex-column flex-sm-row">
         <a class="flex-sm-fill text-sm-center nav-link active" href="../index.html">Home</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="../contactme.html">contact me </a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="../restful-api-presentations/saeou-rest.html">REST </a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="./saeou-rest.html">REST </a>
         <a class="flex-sm-fill text-sm-center nav-link" href="../web-335/saeou-diagrams.html">Diagrams </a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="../web-420/saeou-restful-apis.html">RESTFUL API</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="../web-420/saeou-restful-apis.html">RESTFUL API </a>
         <a class="flex-sm-fill text-sm-center nav-link" href="../web-420/saeou-soap-apis.html">Soap API</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="../web-420/saeou-json-api.html">JSON API</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="../restful-api-presentations/saeou-hypermedia-design.html">Hypermedia Design</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="../web-420/saeou-soa.html">SOA</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="../restful-api-presentations/saeou-microservice.html">Microservice</a>
-
 
     </nav>
 
@@ -274,99 +273,61 @@
             <!-- slide 1-->
             <div class="mySlides">
 
-                <q>What is SOAP? 
-                </q>
-                <p> SOAP is an application communication protocol,a platform independent, is based on XML, and also a format for sending and inviting messages.
+                <q>What is the microservice> </q>
+                <p>
+                    Microservice is service oriented Architecutre that are the small services that work together.
                 </p>
-                <p> More importantly, SOAP stands for "Simple Object Access Protocol".</p>
             </div>
 
             <!-- slide 2-->
             <div class="mySlides">
 
-                <q>Envelope. What are they to SOAP?  </q>
-                <p>An envelope is an element that identifies the XML document as a SOAP message. An envelope is the root element of a SOAP message
-                </p>
+                <q> What is an API gateway? </q>
+                <p> An API gateway takes all API calls from clients, then routes them to the appropriate microservice with request routing, composition, and protocol translation</p>
             </div>
 
             <!-- slide 3-->
             <div class="mySlides">
-                <q>Header - What is Header?  </q>
-                <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6>- The header is a general tool for adding features to a message in a localized manner without agreement between the communications parties that were involve.</h6>
-                    <h6>- The header element must be the first immediate child element of ENVELOPE. </h6>
-
-                    <h6>- Header defines how a recipient should process the SOAP message. </h6>
-                </div>
-
+                <q>The advantages of microservice</q>
+                <p>Autonomous because the application become more loosely coupled, and that helps to reduce the maintenance cost.
+                    </p>
+               <p> Resilience is another advantages of microservice because resilence is a property of isolating a software unit. Because of that, microservice follows high level of resilience in building technique. </p>
+                <p>Ease of Deployment - Because as the whole application is sub-divide into small piece of units, every piece should be full stack in nature. All of them can be deployed in any environment very easily  with less time issue. </p>
             </div>
 
             <!-- slide 4-->
             <div class="mySlides">
-                <q> Faults and Fault Code</q>
-                <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6>- SOAP fault is used to carry any error or status information within a message in SOAP.</h6>
-                    <h6>- Fault must appear as a body entry but it cannot appear more than once within the body element. So meaning, it must be used ONCE.
-                    </h6>
-                    <h6>- FAULT CODE - it is used by software to include a scientific tool for identifying the fault.
-                    </h6>
-                    <h6>-They must present in a SOAP fault element. and the value must be qualified. </h6>
-                </div>
+                <q> The disadvantages of microservice</q>
+                <p>Existing tools are likely incompatible with new service dependencies</p>
+                <p>It's challenging to maintain multiple programming languages and frameworks.</p>
+                <p>The cost because microservice can be pricey, you will have to manage different server space for different business tasks.
+                    .</p>
             </div>
-
 
             <!-- slide 5-->
             <div class="mySlides">
-                <q>End-to-end data flow of a SOAP API  </q>
-                <p>The data-flow of a SOAP API is that it used the standard HTTP request/response model so that the server uses a "listener" to process the requests.
-                </p>
-                <p></p>
-            </div>
+                <q>How microservices are deployed and managed in a production environment.</q>
+                <p>Deploying each services as a set of service instances for output and  availability.
 
+                    All these services are deployed into the same application runtime. Just think of this as having many web application that are deployed into the same instance. Microservices can be deployed indepently.  
+                    
+                    But make sure the microservices design to make sure the agile development works properly. 
+                    </p>
+            </div>
 
             <!-- slide 6-->
 
-
             <div class="mySlides">
-                <q>What are Soap Bindings? </q>
-                <p> The SOAP conditions defines the formation of the messages, but not how they are swapped.
-                </p>
+                <q>how microservices are scaled </q>
+                <p> The application has to be scaled as a singular unit, so making it difficult to maintain conflicting resource requirements such as getting more CPU, while the other requires more memory. </p>
             </div>
 
+            <!-- slide 7-->
 
-
-
-            <!-- slide 8-->
-
-            <div class="mySlides">
-                <q>SOAP - Syntax Rules    </q>
-                <p> MUST be encoded using XML. </p>
-                <p>- MUST use the SOAP Envelope Namespace</p>
-                <p>- the messages must not contain XML processing Instructions </p>
-            </div>
-
-        </div>
-
-
-
-        <!-- slide 9-->
-
-        <div class="mySlides">
-            <q>SOAP - building blocks    </q>
-
-            <p> A header element that contains header information</p>
-            <p> A body element that contains call and response information </p>
-
-            <p> A Fault element containing errors and status information </p>
-
-
+            
 
 
         </div>
-
-        </div>
-
-
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -383,22 +344,17 @@
             <span class="dot" onclick="currentSlide(6)"></span>
             <span class="dot" onclick="currentSlide(7)"></span>
             <span class="dot" onclick="currentSlide(8)"></span>
-
-
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
         </div>
 
-        <hr>
-        <br>
 
         <div class="card">
             <div class="card-body">
                 <video controls autoplay reload="autoplay" style="width:600px;">
-            <source src="../restful-api-presentations/saeou-soap.mp4" type="video/mp4"> 
+            <source src="../restful-api-presentations/saeou-microservice.mp4" type="video/mp4"> 
             </video>
             </div>
-
-
-
 
 
 

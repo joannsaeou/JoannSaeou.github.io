@@ -1,6 +1,11 @@
+//require statements
+
 var express = require('express');
 var router = express.Router();
 var auth_controller = require('../controllers/authController');
+var checkToken = require('../check-token');
+
+
 
 //POST
 
@@ -19,3 +24,6 @@ module.exports = router;
 //to allow user logout request
 
 router.get('/auth/logout', auth_controller.user_logout);
+
+
+router.get('/auth/token', checkToken, auth_controller.user_token);
