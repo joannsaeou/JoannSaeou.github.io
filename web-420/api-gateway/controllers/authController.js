@@ -61,12 +61,9 @@ exports.user_token = function(req, res) {
 // to add a function to handle user login request
 
 exports.user_login = function(req, res) {
-    console.log(req.body);
-    
-    User.getOne(req.body.email, function(err, user) {
-
+    User.getOne(req.body.email, function(err,user) {
         if (err) return res.status(500).send('Error on server.');
-        if (!user) return res.status(404).send('No user found');
+        if (!user) return res.status(404).send('No user found.');
 
         let passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
 
@@ -97,9 +94,7 @@ exports.user_logout = function(req, res) {
 exports.user_token = function(req, res) {
     User.getById(req.userId, function(err, user){
 
-        if (err) return res.status(500).send('There was a problem finding the user.').
-
-        if (!user) return res.status(404).send('No user found. ');
+      
 
 
         res.status(200).send(user);

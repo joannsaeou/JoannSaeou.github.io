@@ -20,6 +20,8 @@ user = {
 
 }
 
+
+
 user_id = db.users.insert_one(user).inserted_id
 
 print(user_id)

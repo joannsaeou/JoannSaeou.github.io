@@ -1,10 +1,10 @@
 <!-- 
     ============================================
-    ; Title: Assignment 4.4
+    ; Title: Assignment 2.2
     ; Author: Professor Krasso
-    ; Date: 20 May 2020
+    ; Date: 09 May 2020
     ; Modified By: Joann Saeou
-    ; Description:presentation  with JSON API 
+    ; Description:presentation  with RESTFUL API
     ;===========================================
 */  
 -->
@@ -275,99 +275,69 @@
             <!-- slide 1-->
             <div class="mySlides">
 
-                <q>What is JSON API? 
+                <q>What OAuth  really is? 
                 </q>
-                <p> JSON stands for JavaScript Object Notation -
-                </p>
-                <p>It is an encoding scheme that is created to remove the need for a makeshift code for each application to communicate with servers that communicate in a defined way
+                <p> OAuth is an authentication protocol that allows you to approve one application interacting with one another on your behalf without giving out your password.
                 </p>
             </div>
 
             <!-- slide 2-->
             <div class="mySlides">
 
-                <q>How is JSON API differ from SOAP API?  </q>
-                <p>SOAP is a standardized protocol that sends messages using other protocols such as a HTTP.
-                </p>
-                <p> While the JSON API is a text-based data exchange format.
+                <q> How OAuth works -  </q>
+                <p>How OAuth works is by assigning user authentication to the service that hosts the user account, and authorizing 3rd-party applications to access the user account. 
                 </p>
             </div>
 
             <!-- slide 3-->
             <div class="mySlides">
-                <q> JSON Request Header  </q>
+                <q>History of OAuth (1.0 versus 2.0). </q>
                 <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6>- The request header is for your app to detect what information was return and how it should handle the data.</h6>
-                    <h6>- It is where the client sends JSON data to the browser and use the data right away </h6>
-
-                    <h6>- A JSON request header contains a string used to authenticate requests. </h6>
-                </div>
-
+                    <h6>OAuth1.0  starts around the year 2008 it was used by this popular socia media website called Twitter because  of that, Twitter forced all 3rd-party apps to use their 0Auth 1.0 implementation then few years later in October 2012 that is when 2.0 came out. It was said that 2.0 is much simplier to implement than 1.0 with its crypto-underpinnings.</h6>
+</div>
             </div>
 
             <!-- slide 4-->
             <div class="mySlides">
-                <q> JSON Request Body </q>
+                <q> Why OAuth is popular? </q>
                 <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6>- A request body is data sent by the client to your API.</h6>
-                    <h6>- The HTTP method of POST, PUT, PATCH requests can have the JSON request body which is called body parameter.
-                    </h6>
-
+                    <h6> Because it is more secure than sharing credentials  to strangers and allows users to utilize services across multiple platforms.  OAuth also offers a good balance with security for your webpage. </h6>
                 </div>
             </div>
 
 
             <!-- slide 5-->
             <div class="mySlides">
-                <q>JSON response body   </q>
-                <p>A Response body is the data your API sends to the client.
-                </p>
-                <p>The API will almost always has to send a response body because that is how they communicate with each other. </p>
+                <q>End to end data flow of an OAuth API.  </q>
+                <p> OAuth defines four roles and they are Resource owner, Resource server, a client, and the authorization server. The four defined roles makes uses of the end to end data flow of an OAuth API.  </p>
+                
             </div>
 
 
             <!-- slide 6-->
-
-
-            <div class="mySlides">
-                <q>end-to-end data flow of a JSON API? </q>
-                <p> To use the data flow of JSON API you will start by importing model.json to create a new data flow
-                </p>
-                <p> It is where you create a new workspace and add a data-flow of JSON API into it. The client can refresh the data-flow
-                </p>
-                <p> and Users can start connecting from their data-flow </p>
-            </div>
-
-
-
-
-            <!-- slide 8-->
+            <!-- to be continued-->
 
             <div class="mySlides">
-                <q>JSON API - document structure     </q>
-                <p>- identified by media type </p>
-                <p>-Every request/response body must be underneath a single JSON object. </p>
-
+                <q>Authorization code flow </q>
+                <p>The client needs to perform two steps to obtain the token, the first involving the browser, the second a back-channel request. That's why this series of steps is also called the code flow. </p>
+                <q> Step 1 -  Code Flow </q>
+                <p>The client initiates the code flow by redirecting the browser to the authorization server with an authorization request.</p>
             </div>
 
-        </div>
+            <!-- slide 7-->
 
+            <div class="mySlides">
+                <q> Step 2 - Code Flow </q>
+                <p>The authorization code is an intermediate credential, which encodes the authorization obtained at step 1. It is therefore opaque to the client and only has meaning to the authorization server. To retrieve the access token the client must submit the code to the authorization server, but this time with a direct back-channel request. </p>
+            </div>
 
+         
 
-        <!-- slide 9-->
+   
 
-        <div class="mySlides">
-            <q> What does a format in JSON API appears as?   </q>
-
-            <p> <mark>   `/jsonapi/{entity_type}/{bundle}/{uuid}?_format=api_json`</mark> </p>
-
-
-
-        </div>
+      
 
         </div>
-
-
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -384,22 +354,19 @@
             <span class="dot" onclick="currentSlide(6)"></span>
             <span class="dot" onclick="currentSlide(7)"></span>
             <span class="dot" onclick="currentSlide(8)"></span>
-
-
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
         </div>
-
         <hr>
         <br>
+
 
         <div class="card">
             <div class="card-body">
                 <video controls autoplay reload="autoplay" style="width:600px;">
-            <source src="../restful-api-presentations/videos/saeou-json-presentation.mp4" type="video/mp4"> 
+            <source src="../restful-api-presentations/videos/saeou-presentation2.mp4" type="video/mp4"> 
             </video>
             </div>
-
-
-
 
 
 
