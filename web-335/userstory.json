@@ -1,0 +1,48 @@
+/*Title: exercise 8.4
+Author: Joann Saeou, christine Bohnet, Brendan Mulhern
+Date: 21 June 2020
+Modified By: Joann Saeou, Christine Bohnet, Brendan Mulhern
+Description: milestone 3 group project - group A
+*/
+
+"customer": {
+    "name" : "Timmy Nook",
+    "address" : {
+        "city" : "New York City",
+        "state" : "NY",
+        "zipcode" : "10019",
+        "country" : "North America"
+    },
+    "transaction" : [
+        {
+            "subscription" : "plus subscription",
+            "payment" : [
+                {
+                    "ccinfo" : 1111222233334444,
+                    "txnid" : "abcd"
+                }
+            ],
+            "order_items" : [
+                {
+                    "price" : 6.99
+                }
+            ],
+            "addresses" : [
+                {
+                    "type" : "shipping",   
+                    "city" : "New York City",
+                    "state" : "NY",
+                    "zipcode" : "10019",
+                    "country" : "North America"     
+                },
+                {
+                    "type" : "billing",   
+                    "city" : "New York City",
+                    "state" : "NY",
+                    "zipcode" : "10019",
+                    "country" : "North America"     
+                }
+            ]
+        }
+    ]
+}
