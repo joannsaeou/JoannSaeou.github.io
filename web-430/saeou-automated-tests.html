@@ -86,11 +86,11 @@
 
 
 <body style="height: 20%; margin: 0">
+
  <!-- Nav bar -->
  <nav class="nav nav-pills flex-column flex-sm-row">
     <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home  </a>
     <a class="flex-sm-fill text-sm-center nav-link" href="./contactme.html">contact me </a>
-    <a class="navbar-brand" href="./saeou-automated-tests.html">Automated Tests </a>
 
 </nav>
 
@@ -135,6 +135,7 @@
     </div>
   </nav>
 
+
         <!-- bottom fixed nav bar-->
 
         <nav class="navbar fixed-bottom navbar-inverse bg-primary bg-faded">
@@ -143,6 +144,7 @@
             <a class="navbar-brand" href="./saeou-automated-tests.html">Automated Tests </a>
 
           </nav>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -315,9 +317,9 @@
             <!-- slide 1-->
             <div class="mySlides">
 
-                <q>Defining Lead Time vs. Processing Time
+                <q>Unit Tests
                 </q>
-                <p> Lead time is one of two measures commonly used to measure performance in value streams, with the other being processing time (sometimes known as touch time or task time).   
+                <p> A Unit test is a test that runs a single method, class, or function in seclusion, by providing guarantee to the developer that their code operates as planned.
                 </p>
             </div>
 
@@ -325,22 +327,23 @@
             <div class="mySlides">
 
               
-                <p>The clock during the Lead Time starts when the request is being made or submitted and ends when it is completely finished. 
+                <p>A unit testing is a software development and testing approach in which the smallest testable parts of an applications called units are individually and independently tested to see if they are operating properly.  
                 </p>
             </div>
 
             <!-- slide 3-->
             <div class="mySlides">
-                <p> The processing time is when the clock begins only when youstart working on the customer request. The processing Time just erases the time that the work is in queue that is waiting to be processed.  
+                <p>Unit tests can be done manually but it is mostly being done automated.
                 </p>
 </div>
             </div>
 
             <!-- slide 4-->
             <div class="mySlides">
-                <q> The Common Scenario: Deployment Lead Timers Requiring Months </q>
+
+                <q>Acceptance Test</q>
                 <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
-                    <h6> The leader timers will take months to possibly 6 month from the time it takes to go from code committed to code successfully running in production.  </h6>
+                    <h6> An acceptance test is a formal description of the behavior of a software product, generally expressed as an example or a usage scenario.   </h6>
                 </div>
             </div>
 
@@ -348,7 +351,8 @@
             <!-- slide 5-->
             <div class="mySlides">
                 
-                <p>There is a metric in lead timers by capturing the time at which each changes was initiated in CodePipeline and then updating the row with the time at which that same alteration successfully runs the last action of the deployment pipeline. 
+                <p>The aim of these acceptance test is that it should be possible to automate the execution of such tests by a software tool, either necessary to the development team.
+
                 </p>
                 
             </div>
@@ -358,31 +362,38 @@
             <!-- to be continued-->
 
             <div class="mySlides">
-                <q>Our DevOps Ideal: Deployment Lead Times of Minutes </q>
-                <p> How lead deployment lead times takes minute? It is by keep checking small code changes. performing testing against it, and deploying it into production. </p>
+                
+                <p> An acceptance test generally has a binary result, displaying a pass or fail.  </p>
+                     </p>
                 
             </div>
 
             <!-- slide 7-->
 
             <div class="mySlides">
-                <q> This will enables your team or work-group to  have a high degree of confidence that the changes will operate as designed in production and this is how it can be quickly detected and corrected;  </q>
-                <p> It will take from commit stage then the automated test in 10 minute, to exploratory test in 10 minue and then thee production deployment in 5 minute that is the total cycle of 25minute of deployment lead times, 
+                <q> Integration Tests</q>
+                <p> During in the middle of an automated test,  the application will interact with other parts and this needs to be tested and that is where Integration tests are there to help for this.
                 </p>
             </div>
 
          
 
             <div class="mySlides">
-               
-                <p> It will take from commit stage then the automated test in 10 minute, to exploratory test in 10 minue and then thee production deployment in 5 minute that is the total cycle of 25minute of deployment lead times, 
+    
+                <p> They test the integration of your application with all the parts and pieces that live outside of your application. 
                 </p>
             </div>
 
       
 
         </div>
-        
+
+        <div class="mySlides">
+            <p>
+                If you are testing the integration with a database you need to run a database when running your tests. Such as using a MongoDB
+
+            </p>
+        </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -406,10 +417,12 @@
         <br>
 
 
+        <!-- Displaying video-clips  in MP4 -->
+
         <div class="card">
             <div class="card-body">
                 <video controls autoplay reload="autoplay" style="width:600px;">
-            <source src="../web-430/video-ppt/saeou-automated-test.mp4" type="video/mp4"> 
+            <source src="../web-430/video-ppt/saeou-two-pizza-rules.mp4" type="video/mp4"> 
             </video>
             </div>
 
@@ -461,7 +474,6 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
 
 
     </body>
