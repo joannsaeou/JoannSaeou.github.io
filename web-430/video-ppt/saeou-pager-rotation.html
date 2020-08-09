@@ -1,0 +1,481 @@
+<!-- 
+    ============================================
+    ; Title: saeou-pager-rotation.html
+    ; Author: Professor Krasso
+    ; Date: 08 August 2020
+    ; Modified By: Joann Saeou
+    ; Description: pager rotation presentation 
+    ;===========================================
+*/  
+-->
+
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+
+    <title>Joann's personal portfolio</title>
+
+
+    <meta charset="UTF-8">
+
+
+
+    <meta name="personalportfolio" content="personal portfolio">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link to my pug template file -->
+    <link rel="stylesheet" href="ejs-pug-jade/views/index.pug">
+
+    <!-- link to my javascript file-->
+    <link rel="javascript" href="/portfolio/dist/ejs-pug-jade/myjavascript.js">
+
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- my own CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="../dist/style.css">
+
+    <!-- social media stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        
+        .follow {
+            float: bottom;
+            align-self: auto;
+        }
+    </style>
+
+
+</head>
+
+
+<body style="height: 20%; margin: 0">
+    <!-- Nav bar -->
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home  </a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="./contactme.html">contact me </a>
+        <a class="navbar-brand" href="./saeou-automated-tests.html">Automated Tests </a>
+
+    </nav>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../restful-api-presentations/saeou-hypermedia-design.html">Hypermedia Design <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../restful-api-presentations/saeou-microservice.html">Microservice</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../restful-api-presentations/saeou-rest.html">Rest </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../web-420/saeou-auth-security.html">Auth Security</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../web-420/saeou-json-api.html">JSON API </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../web-420/saeou-soa.html">SOA </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../web-420/saeou-soap-apis.html">SOAP API </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- bottom fixed nav bar-->
+
+    <nav class="navbar fixed-bottom navbar-inverse bg-primary bg-faded">
+        <a class="navbar-brand" href="./devops-presentations.html">DevOps</a>
+        <a class="navbar-brand" href="./saeou-two-pizzarules.html">Two Pizza Rule </a>
+        <a class="navbar-brand" href="./saeou-automated-tests.html">Automated Tests </a>
+        <a class="navbar-brand" href="./saeou-pager-rotation.html">Pager-Rotation Duties </a>
+
+
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" id="carousel-837437">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-target="#carousel-837437" class="active">
+                        </li>
+                        <li data-slide-to="1" data-target="#carousel-837437">
+                        </li>
+                        <li data-slide-to="2" data-target="#carousel-837437">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" alt="bootstap-first" src="../cutewallpaper.jpeg" />
+                            <div class="carousel-caption">
+                                <h4>
+                                    Joann Saeou
+                                </h4>
+                                <p>
+                                    Web developer and Medical Coding
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" alt="carousel" src="../cutewallpaper.jpeg" />
+                            <div class="carousel-caption">
+                                <h4>
+                                    Second Thumbnail label
+                                </h4>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" alt="third" src="./cutewallpaper.jpeg" />
+                            <div class="carousel-caption">
+                                <h4>
+                                    Third Thumbnail label
+                                </h4>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div> <a class="carousel-control-prev" href="#carousel-837437" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a>
+                    <a class="carousel-control-next" href="#carousel-837437" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" style="text-align: center;">
+                        <h1 text-align="text-sm-center">Presentation</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            position: relative;
+            background: #f1f1f1f1;
+            width: 70%;
+            margin: 0 auto;
+        }
+        /* Slides */
+        
+        .mySlides {
+            margin-bottom: 30px;
+            height: 350px;
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: 480px;
+            padding: 20px;
+            color: #888;
+            font-weight: bold;
+            font-size: 70px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+        /* The dot/bullet/indicator container */
+        
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        /* Add a background color to the active dot/circle */
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Add an italic font style to all quotes */
+        
+        q {
+            font-style: italic;
+        }
+        /* Add a blue color to the author */
+        
+        .author {
+            color: cornflowerblue;
+        }
+        
+        p {
+            margin-top: 2rem;
+        }
+    </style>
+
+    <body>
+
+
+
+        <!--slides/presentation starts here -->
+
+        <div class="slideshow-container">
+
+            <!-- slide 1-->
+            <div class="mySlides">
+
+                <q>Pager Rotation Duties
+                </q>
+                <p> Pager Rotation Duty are also known as DevOps On-Call, For the ones who aren't familiar with this phase "Pager Rotation duties" , just think of on-call or scheduling services. You can imagine on-call duties similar to doctors and nurses
+                    supporting each other via schedules/rotation via those hospital phones in every room around the clock. .
+                </p>
+            </div>
+
+            <!-- slide 2-->
+            <div class="mySlides">
+
+
+                <p>Once you have launched your first server monitoring service, you will defintely be on call 24/7 throughouth 365 days of the year. You will be on call all the time. There will not be a stopping point in all of this unless you messed up
+                    the codes or causing the whole system to have a huge crash.
+                </p>
+            </div>
+
+            <!-- slide 3-->
+            <div class="mySlides">
+                <q> First Level of  On-Call duties</q>
+                <p> During the working hours of on-call duties - all alerts will go to an operations engineer and this comes up with a much needed soundless time for the production team in your company to do what they are best at on these particular field.
+                    During the Outside work hours, the alert could also go to anyone such as the ops or the product alike. You and your company will rotate between team members every weeks per 7 days, meaning it could keep rotates to go on and on and
+                    on 24hr 7 days .
+                </p>
+            </div>
+        </div>
+
+        <!-- slide 4-->
+        <div class="mySlides">
+            <q>Second Level of On-call duties  </q>
+            <div style="text-align: start; margin-top: 2rem; display:grid; place-content: center;">
+                <h6> A huge soar of issues will mostly involves in production circumstances that is unrelated to codes. Second Level on-call duty rotates only between operation engineers because they have the deeper knowledge of the hardware and network framework.
+                </h6>
+            </div>
+        </div>
+
+
+        <!-- slide 5-->
+        <div class="mySlides">
+
+            <p> PagerDuty is like when an engineer who doesn't respond within the time limit via SMS to phones to emails, there will always be someone else on the line available to take that call. If an engineer or person on the team is in hospital because
+                of illness or in car accident, or is in the middle of travelling, that is when you start to ask for volunteers re-arrange the on-call duties.
+            </p>
+
+        </div>
+
+
+        <!-- slide 6-->
+        <!-- to be continued-->
+
+        <div class="mySlides">
+
+            <p>During the on-call duty shifts, if something break or has a major issue, the on-call engineer will get paged through a smartphone, notifcations, text or email even the oldest device can still get paged.
+            </p>
+
+        </div>
+
+        <!-- slide 7-->
+
+        <div class="mySlides">
+            <p> During the on-call duty shifts , the on-call engineer job is to maintain taking actions on the page and must fix the issue quickly or let the other engineer team know if that person cannot fix it then that another engineer-person will volunteer
+                to try to fix the issues.
+            </p>
+        </div>
+
+
+
+        <div class="mySlides">
+
+            <p>The best way for on-call rotation to keep in mind to have en effectively in creating and managing the rotations is to set up your teammates, then establish time limit within your customers or end users, you will also need to make sure that
+                there's an easy way for people to edit the schedule to accommodate shift swaps as needed.More importantly to be aware of on-calls hours - because it helps people get ahead of knowing when they'll be on the pager rotation duty and when
+                they will be offline. These can easily be done with an on-call timeline.
+            </p>
+        </div>
+
+
+
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+        <hr>
+        <br>
+
+
+        <div class="card">
+            <div class="card-body">
+                <video controls autoplay reload="autoplay" style="width:600px;">
+            <source src="../video-ppt/saeou-pager-rotation.mp4" type="video/mp4"> 
+            </video>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+
+
+            <!--CDN Jquery, CDN bootstrap, and CDN popper library -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+    </body>
+
+</html>
