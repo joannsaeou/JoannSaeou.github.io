@@ -1,4 +1,4 @@
-/* /*
+/* /* 
 ============================================
 ; Title: style.css
 ; Author: Professor Krasso
@@ -195,7 +195,7 @@ h3 {
 }
 
 html {
-    -ms-overflow-style: scrollbar;
+    
     -webkit-tap-highlight-color: transparent;
 }
 
